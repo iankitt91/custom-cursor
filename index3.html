@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            width:100%;
+            height:100%;
+            color:grey;
+            padding:100px;
+            cursor:pointer;
+            line-height:30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .arrow1{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            border:1px solid white;
+            position:fixed;
+        }
+        .arrow2{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            background-color:black;
+            filter:blur(20px);
+            position:fixed;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow1">
+
+    </div>
+    <div class="arrow2">
+
+    </div>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt laboriosam nobis itaque nostrum tempore ipsam non autem, quia, cum porro magni unde commodi architecto nisi quae? Magni culpa voluptate eos reiciendis voluptas doloremque! Ullam sequi, ab quidem mollitia error cum, accusantium harum officia minus, qui quae laudantium illo similique temporibus corrupti illum? Inventore, deserunt at? Distinctio inventore reiciendis culpa recusandae blanditiis itaque! Sit iure deleniti eius dolorem tempora? Eius cupiditate omnis ipsam repellat quia delectus est commodi, vel quae nesciunt voluptate incidunt nemo quam quis quas ratione. Soluta, minima. Maiores facilis quae cum asperiores exercitationem ea, perferendis vitae aut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, neque, libero sapiente et corporis voluptatum ipsa temporibus aut quasi sed eius explicabo distinctio ab perferendis quos voluptates assumenda, sit fuga tempore eos exercitationem! Esse non possimus magnam fuga quisquam libero qui iste doloribus minus impedit earum voluptates, beatae atque architecto?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, iste, eaque voluptate voluptas obcaecati id consequuntur veniam, ratione harum hic nobis enim. Reprehenderit ab rerum nisi repellat distinctio incidunt dolorem quisquam quod cumque quis inventore neque autem, minus enim reiciendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque odio quibusdam ipsam cum? Quisquam nihil itaque doloribus non dolores et nisi accusamus ea iusto blanditiis expedita a debitis, illum aliquam inventore soluta, ipsa velit accusantium ipsam mollitia. Facere tempora fuga, est deserunt cumque aliquam error. Voluptas enim quam quis incidunt unde, culpa expedita! Vero ratione ullam ut eos impedit delectus vitae ea. Quae itaque voluptatem distinctio. Repellendus reiciendis, facere quaerat <br>assumenda temporibus amet numquam aliquam aut illum tempora! Incidunt minima sapiente praesentium distinctio eligendi cumque, dolores possimus repudiandae nostrum sint, architecto esse dicta quis expedita eveniet vero est reiciendis quos officia eos? Tempore eum, aperiam quo rem, enim illum id possimus nisi cum hic voluptatem at fuga vel quisquam laborum quidem corrupti. Sequi perspiciatis nam corporis optio accusantium pariatur labore tempore, dolore fuga. Dolorum debitis porro rerum distinctio. Enim quas nulla quasi facilis quidem nam quae earum amet quisquam iure at aperiam, velit architecto eveniet quibusdam? Deserunt quidem nemo beatae cum distinctio ab! Adipisci voluptate facere rem, dolorum, sapiente et deleniti autem aspernatur earum esse harum eum possimus animi id suscipit odit qui accusamus obcaecati. Quibusdam tempora ut nisi iste enim quas voluptates, incidunt harum quisquam a eveniet consectetur!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, reprehenderit rem, iure sunt obcaecati enim architecto modi itaque aliquid, ex eveniet voluptate dolores reiciendis dolor? Cupiditate blanditiis, nobis, fugiat at veniam repudiandae iure, sit omnis adipisci quis aliquam nostrum magni similique sed provident? Obcaecati aspernatur sit eligendi maiores qui! Excepturi asperiores, enim velit voluptatem delectus nisi, commodi sit voluptatum blanditiis maxime omnis hic tempora repellendus eligendi. Quia minima eligendi, nesciunt veniam molestiae repellat! Vero sint natus minus, similique accusamus, voluptate harum quaerat vel dolor id rerum neque. <br> Enim, incidunt deserunt. Vero enim repudiandae reiciendis, fugit reprehenderit ratione delectus esse cum dicta expedita commodi harum magni fuga voluptatum itaque architecto libero deserunt assumenda veniam facere. Velit perferendis aliquid sunt quibusdam excepturi iure cum. Doloribus, nostrum! Iure cumque nemo iste aperiam quis quidem, excepturi et aspernatur natus. Unde dignissimos suscipit reprehenderit nihil omnis temporibus neque nobis odio sint iure voluptate est, culpa cupiditate distinctio cumque quaerat nesciunt minima aperiam maxime sed doloribus voluptas asperiores aut officiis? Ea impedit maxime ipsa similique ad! Hic, velit eius quidem facilis ipsam earum maxime nostrum, nam reiciendis, blanditiis ipsum eaque? Natus consequatur debitis placeat id, sint maiores dolores vero, consectetur dolorum cum accusamus, quia ab qui minus incidunt odio quasi quaerat! Ipsum nam tempore et autem maxime eligendi reiciendis perferendis, reprehenderit dignissimos beatae assumenda quis provident sapiente aspernatur nulla non. Qui nemo vero at unde voluptates, quod non aliquid iste amet natus error ullam sequi exercitationem ex fugit vel hic alias. Voluptas molestias enim dolorum incidunt!</p>
+
+    <script>
+        var arrow1=document.querySelector(".arrow1");
+        var arrow2=document.querySelector(".arrow2");
+        document.addEventListener("mousemove",function(a){
+            arrow1.style.top=a.y+"px";
+            arrow1.style.left=a.x+"px";
+            arrow2.style.top=a.y-150+"px";
+            arrow2.style.left=a.x-140+"px";
+        })
+    </script>
+</body>
+</html>
